@@ -44,12 +44,12 @@ body {
 }
 
 .banner {
-  @include shared.banner-background();
-
   color: shared.$white-color;
   text-align: center;
   position: relative;
   margin-top: 10px;
+
+  @include shared.banner-background();
 
   &__content {
     position: absolute;
@@ -82,6 +82,7 @@ body {
   &__link {
     @include shared.button-styles();
   }
+
 }
 
 .section {
@@ -144,8 +145,8 @@ body {
 }
 
 .aside {
-  @include shared.aside-styles(); // Aplica el estilo del aside
-
+  @include shared.aside-styles();
+  
   &__title {
     @include shared.title-styles();
   }
@@ -162,7 +163,6 @@ body {
     @include shared.aside-container-styles();
   }
 }
-
 
 .form {
   margin-top: 20px;
